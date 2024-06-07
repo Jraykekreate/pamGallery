@@ -63,9 +63,9 @@ function Card() {
   <div className="image flex justify-start md:h-72">
     <img src ={Gojo} className="max-w-full rounded-3xl max-h-full object-scale-down"></img>
   </div>
-  <div className=" flex flex-col gap-8 text py-4 px-4   justify-center text-center ">
-    <h1 className="font-bold text-xl">Top 10 Anime Edits Of 2022 </h1>
-    <h2 className="font-normal text-base text-myTetiary">Check Out Our Top picks for anime in 2022 </h2>
+  <div className=" flex flex-col gap-8 mx-auto max-w-72 md:max-w-fit  text py-4 px-4   justify-center text-center ">
+    <h1 className="font-bold mx-auto max-w-64 md:max-w-fit text-wrap text-xl">Top 10 Anime Edits Of 2022 </h1>
+    <h2 className="font-normal  mx-auto max-w-72 md:max-w-fit text-base text-wrap  text-myTetiary">Check Out Our Top picks for anime in 2022 </h2>
     <h3 className="font-bold text-base">A ROUNDUP OF THE BEST ANIME ART THIS YEAR</h3>
   </div>
 </div>
