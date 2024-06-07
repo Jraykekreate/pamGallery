@@ -1,0 +1,11 @@
+h1::after{
+    content: '';
+    width: 40px;
+    height: 5px;
+    background-color:blueviolet;
+    position: relative;
+    bottom: -8px;
+    display: block;
+    left:  0px;
+
+}
