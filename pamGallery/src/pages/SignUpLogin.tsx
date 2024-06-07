@@ -31,8 +31,8 @@ export default function Login () {
 
                 
                 {signUpLoginState === 'Login' ?  "" :  <input className="p-2 py-2 rounded-xl border" type="name" name="userName" placeholder="Enter a username"></input> }
-                {signUpLoginState === 'Login' ?  "" :  <input className="p-2 py-2 rounded-xl border" type="name" name="userName" placeholder="Enter A First Name"></input> }
-                {signUpLoginState === 'Login' ?  "" :  <input className="p-2  py-2 rounded-xl border" type="name" name="userName" placeholder="Enter a Last"></input> }
+                {signUpLoginState === 'Login' ?  "" :  <input className="p-2 py-2 rounded-xl border" type="name" name="firstName" placeholder="Enter A First Name"></input> }
+                {signUpLoginState === 'Login' ?  "" :  <input className="p-2  py-2 rounded-xl border" type="name" name="lastName" placeholder="Enter a Last"></input> }
 
                 <input className="p-2 rounded-xl border" type="email" name="email" placeholder="Email"></input>
                 <div className="relative">
