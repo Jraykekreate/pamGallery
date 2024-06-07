@@ -13,15 +13,15 @@ export default function HeroSection() {
         <p className="text-base max-w-72 md:max-w-fit mx-auto text-myTetiary ">
           Join our community and start selling your anime pictures today!
         </p>
-        <div className=" mx-auto flex flex-wrap justify-center items-center md:justify-start  space-y-4 space-x-8">
+        <div className="flex flex-wrap items-baseline md:justify-start  space-y-4 space-x-8">
           <Button className="px-8 py-6 border-2 text-xl font-bold border-mySecondary hover:bg-white hover:text-mySecondary hover:shadow-lg">
             Get Started
           </Button>
           <Button
-            className="px-8 py-6 text-centre border-2 text-xl font-bold border-mySecondary hover:bg-mySecondary hover:text-white hover:shadow-lg"
+            className="px-8 py-6  border-2 text-xl font-bold border-mySecondary hover:bg-mySecondary hover:text-white hover:shadow-lg"
             variant="outline"
           >
-            Outline
+            Login
           </Button>
         </div>
       </div>
