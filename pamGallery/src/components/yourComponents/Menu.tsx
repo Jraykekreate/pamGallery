@@ -12,30 +12,30 @@ export default function Menu() {
       </div>
       <div className="cards gap-8 flex flex-col md:flex-row justify-between p-10">
         <div className="  max-w-lg">
-          <h1 className="text-5xl  font-bold">Anime Art Prints</h1>
+          <h1 className="text-3xl md:text-5xl font-bold">Anime Art Prints</h1>
           <p className=' my-8'>High-quality prints of your favorite anime art</p>
         </div>
         <div className=" max-w-lg">
-          <h1 className="text-5xl  font-bold">Custom Anime Edits
+          <h1 className="text-3xl md:text-5xl font-bold">Custom Anime Edits
 </h1>
           <p className=' my-8'>Get your favorite anime characters edited to your liking</p>
         </div>
         <div className=" max-w-lg">
-          <h1 className="text-5xl  font-bold">Anime Wallpapers</h1>
+          <h1 className="text-3xl md:text-5xl  font-bold">Anime Wallpapers</h1>
           <p className=' my-8'>Anime-themed wallpapers for your devices</p>
         </div>
       </div>
       <div className="cards gap-8 flex flex-col md:flex-row justify-between p-10">
         <div className="  max-w-lg">
-          <h1 className="text-5xl  font-bold">Anime Stickers</h1>
+          <h1 className="text-3xl md:text-5xl font-bold">Anime Stickers</h1>
           <p className=' my-8'>Decorate anime your belongins with our anime stickers </p>
         </div>
         <div className=" max-w-lg">
-          <h1 className="text-5xl  font-bold">Anime Posters</h1>
+          <h1 className="text-3xl md:text-5xl font-bold">Anime Posters</h1>
           <p className=' my-8'>Decorate anime your belongins with our anime stickers</p>
         </div>
         <div className=" max-w-lg">
-          <h1 className="text-5xl  font-bold">Anime Merch</h1>
+          <h1 className="text-3xl md:text-5xl  font-bold">Anime Merch</h1>
           <p className=' my-8'>A collection of anime-themed merchandise</p>
         </div>
         

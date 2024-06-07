@@ -13,15 +13,15 @@ export function ChoosePam() {
       </div>
       <div className="cards gap-8 flex flex-col md:flex-row justify-between p-10">
         <div className="  max-w-lg">
-          <h1 className="text-5xl text-white font-bold">High Quality</h1>
+          <h1 className="text-3xl md:text-5xl text-white font-bold">High Quality</h1>
           <p className='text-white my-8'>We ensure all our art pieces are of the highest quality</p>
         </div>
         <div className=" max-w-lg">
-          <h1 className="text-5xl text-white font-bold">Wide Variety</h1>
+          <h1 className="text-3xl md:text-5xl text-white font-bold">Wide Variety</h1>
           <p className='text-white my-8'>We offer a wide range of anime art and edits</p>
         </div>
         <div className=" max-w-lg">
-          <h1 className="text-5xl text-white font-bold">Custom Edits</h1>
+          <h1 className="text-3xl md:text-5xl text-white font-bold">Custom Edits</h1>
           <p className='text-white my-8'>Get your favorite anime characters edited to your liking</p>
         </div>
     
