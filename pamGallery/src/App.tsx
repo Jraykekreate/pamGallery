@@ -4,7 +4,7 @@ import Home from './pages/Home'
 import SignUpLogin from './pages/SignUpLogin'
 
 function App() {
- 
+   
 
 
   return (

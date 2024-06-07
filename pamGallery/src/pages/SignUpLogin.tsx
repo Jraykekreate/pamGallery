@@ -1,10 +1,15 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import Kouji from '../assets/images/kouji.jpg'
+import { useLocation } from 'react-router-dom';
+import { Location } from "history";
+import { Link } from "react-router-dom";
 export default function Login () {
     
    const [signUpLoginState,setSignUpLoginState ]= useState<string>('Sign Up')
    const [passwordToggle,setPasswordToggle ]= useState<boolean>(false)
+   const location: Location = useLocation()
+   const currentPath: string = location.pathname;
    const handlePasswordToggle= () => {
 
     setPasswordToggle((prev)=>!prev)
@@ -22,17 +27,17 @@ export default function Login () {
     <div>
         
         <section className="bg-primaryBg min-h-screen flex box-border font-primaryText justify-center items-center">
-    <div className= {` bg-primaryBg rounded-2xl flex  p-5 shadow-2xl items-center ${ signUpLoginState === "Login" ? 'max-w-3xl': 'max-w-6xl'} `}>
+    <div className= {` bg-primaryBg rounded-2xl flex  p-5 shadow-2xl items-center ${ signUpLoginState === "Login" || currentPath === '/Login' ? 'max-w-3xl': 'max-w-6xl'} `}>
         <div className="md:w-1/2 px-8">
-            {signUpLoginState === 'Login' ? <h2 className="font-bold text-3xl text-[#002D74]">Login</h2> :  <h2 className="font-bold text-3xl text-[#002D74]">SignUp</h2>  }
-            <p className="text-sm my-2 text-[#002D74]">Easily {signUpLoginState === 'Login' ? <span>Log in</span>: <span>Sign Up</span>} now.</p> 
+            {signUpLoginState === 'Login' || currentPath === '/Login'  ? <h2 className="font-bold text-3xl text-[#002D74]">Login</h2> :  <h2 className="font-bold text-3xl text-[#002D74]">SignUp</h2>  }
+            <p className="text-sm my-2 text-[#002D74]">Easily {signUpLoginState === 'Login' || currentPath === '/Login'  ? <span>Log in</span>: <span>Sign Up</span>} now.</p> 
 
             <form action="" className="flex flex-col gap-4">
 
                 
-                {signUpLoginState === 'Login' ?  "" :  <input className="p-2 py-2 rounded-xl border" type="name" name="userName" placeholder="Enter a username"></input> }
-                {signUpLoginState === 'Login' ?  "" :  <input className="p-2 py-2 rounded-xl border" type="name" name="firstName" placeholder="Enter A First Name"></input> }
-                {signUpLoginState === 'Login' ?  "" :  <input className="p-2  py-2 rounded-xl border" type="name" name="lastName" placeholder="Enter a Last Name"></input> }
+                {signUpLoginState === 'Login' || currentPath === '/Login'  ?  "" :  <input className="p-2 py-2 rounded-xl border" type="name" name="userName" placeholder="Enter a username"></input> }
+                {signUpLoginState === 'Login' || currentPath === '/Login'  ?  "" :  <input className="p-2 py-2 rounded-xl border" type="name" name="firstName" placeholder="Enter A First Name"></input> }
+                {signUpLoginState === 'Login' || currentPath === '/Login'  ?  "" :  <input className="p-2  py-2 rounded-xl border" type="name" name="lastName" placeholder="Enter a Last Name"></input> }
 
                 <input className="p-2 rounded-xl border" type="email" name="email" placeholder="Email"></input>
                 <div className="relative">
@@ -58,12 +63,12 @@ export default function Login () {
                         </path>
                     </svg>
                 </div>
-                <Button className="  text-white py-6 rounded-xl hover:scale-105 transition-all duration-300  font-medium bg-mySecondary" type="submit">{signUpLoginState === 'Login' ? 'Login' : 'Sign up'}</Button>
+                <Button className="  text-white py-6 rounded-xl hover:scale-105 transition-all duration-300  font-medium bg-mySecondary" type="submit">{signUpLoginState === 'Login' || currentPath === '/Login'  ? 'Login' : 'Sign up'}</Button>
             </form>
       
             <div className="mt-4 text-sm flex flex-col gap-4 justify-between items-start container-mr">
-                <p className="mr-3 md:mr-0 ">{signUpLoginState === "Login" ? " If you don't have an account." : "Continue from where you left off"}</p>
-                <Button onClick={handleClick} className="register text-mySecondary border-2 border-mySecondary hover:bg-slate-200 transition-all bg-slate-200  duration-300  rounded-xl py-4 px-8 hover:px-10 hover:border-2 font-semibold ">{signUpLoginState === 'Login' ? 'Register' : 'Login'}</Button>
+                <p className="mr-3 md:mr-0 ">{signUpLoginState === "Login" ? "If you don't have an account." : "Continue from where you left off"}</p>
+                <Link to='/Sign Up' onClick={handleClick} className="register text-mySecondary border-2 border-mySecondary hover:bg-slate-200 transition-all bg-slate-200  duration-300  rounded-xl py-2 px-8 hover:px-10 hover:border-2 font-semibold ">{signUpLoginState === 'Login' || currentPath === '/Login' ? 'Register' : 'Login'}</Link>
             </div>
         </div>
         <div className="md:block hidden w-1/2">
